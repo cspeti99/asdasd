@@ -1,12 +1,12 @@
-def szamjegyek(n):
+def digits(n):
     db = 0
-    lsrossz = []
+    lsbad = []
     for i in range(0, n+1):
         i = str(i)
         for ch in i:
             if ch != '4' or ch != '7' or ch != '0':
-                lsrossz.append(i)
+                lsbad.append(i)
                 continue
-    return lsrossz
-    
-print(szamjegyek(600))
+    return lsbad
+
+print(digits(600))
