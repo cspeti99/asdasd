@@ -1,12 +1,13 @@
 def digits(n):
     db = 0
-    lsbad = []
+    lsgood = []
     for i in range(0, n+1):
         i = str(i)
         for ch in i:
-            if ch != '4' or ch != '7' or ch != '0':
-                lsbad.append(i)
-                continue
-    return lsbad
+            if ch == '1' or ch == '2' or ch == '3' or ch == '5' or ch == '6' or ch == '8' or ch == '9':
+                break
+            lsgood.append(i)
+            db += 1
+    return (lsgood,db)
 
-print(digits(600))
+print(digits(60))
