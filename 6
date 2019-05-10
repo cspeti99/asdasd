@@ -1,13 +1,18 @@
 def digits(n):
     db = 0
+    badnums = '1235689'
     lsgood = []
     for i in range(0, n+1):
-        i = str(i)
-        for ch in i:
-            if ch == '1' or ch == '2' or ch == '3' or ch == '5' or ch == '6' or ch == '8' or ch == '9':
+        szamok = [int(j) for j in str(i)]
+        for i in szamok:
+            if str(i) in badnums:
                 break
-            lsgood.append(i)
-            db += 1
-    return (lsgood,db)
+        lsgood.append(i)
+        db += 1
+    return db
 
-print(digits(60))
+print(digits(80))
+
+n = 655132684
+x = [int(i) for i in str(n)]
+print(x)
