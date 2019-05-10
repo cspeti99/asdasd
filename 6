@@ -1,18 +1,15 @@
 def digits(n):
-    # db = 0
-    # badnums = '1235689'
-    # lsgood = []
-    # for i in range(0, n+1):
-    #     szamok = [int(j) for j in str(i)]
-    #     for i in szamok:
-    #         if str(i) not in badnums:
-    #             lsgood.append(i)
-    #             db += 1
+    db = 0
+    badnums = '1235689'
     lsgood = []
-    for i in range(n):
-        if set(list(str(i))).issubset(list('047')):
+    for i in range(0, n + 1):
+        szamok = [int(j) for j in str(i)]
+        for j in szamok:
+            if str(j) in badnums:
+                break
+        else:
             lsgood.append(i)
+            db += 1
+    return(lsgood, db)
 
-    return (lsgood,len(lsgood))
-
-print(digits(80))
+print(digits(117))
