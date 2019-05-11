@@ -7,4 +7,6 @@ m = list(m)
 print(m)
 
 x = set(itertools.permutations(m))
-y = list(map(int,(''.join(map(str,i)) for i in list(x)]
+y = list(map(int,(''.join(map(str,i)) for i in list(x) if i[0] != 0)))
+print(y)
+
