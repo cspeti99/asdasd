@@ -3,13 +3,15 @@ import numpy as np
 m = np.random.randint(0,100,(5,5))
 print(m)
 
+
 maxok = []
-for i in range(0,5):
-    for j in range(0, 1):
-        print(m[i][j])
 
-print("------------------------------------")
+# for x in range(0,5):
+#     for y in range(0,5):
+#         r = m[x,:]
+#         maxok.append(r[y])
+#         c = m[:,y]
+# print(maxok)
 
-for j in range(0,1):
-    for i in range(0, 5):
-        print(m[i][j])
+maxrows = list(map(max, m))
+print(maxrows)
