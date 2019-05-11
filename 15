@@ -1,0 +1,9 @@
+import numpy as np
+import itertools
+
+
+m = np.random.randint(0,10,5)
+m = list(m)
+print(m)
+
+x = set(itertools.permutations(m))
