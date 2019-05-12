@@ -1,6 +1,18 @@
 import numpy as np
 import itertools
 
+# m = []
+# a = int(input("First digit: "))
+# b = int(input("Second digit: "))
+# c = int(input("Third digit: "))
+# d = int(input("Fourth digit: "))
+# e = int(input("Fifth digit: "))
+
+# m.append(a)
+# m.append(b)
+# m.append(c)
+# m.append(d)
+# m.append(e)
 
 m = np.random.randint(0,10,5)
 m = list(m)
@@ -9,4 +21,3 @@ print(m)
 x = set(itertools.permutations(m))
 y = list(map(int,(''.join(map(str,i)) for i in list(x) if i[0] != 0)))
 print(y)
-
