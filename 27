@@ -6,12 +6,5 @@ print(m)
 
 maxok = []
 
-# for x in range(0,5):
-#     for y in range(0,5):
-#         r = m[x,:]
-#         maxok.append(r[y])
-#         c = m[:,y]
-# print(maxok)
-
 maxrows = list(map(max, m))
 print(maxrows)
