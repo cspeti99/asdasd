@@ -17,4 +17,4 @@ print(m)
 # print(maxrows)
 
 
-rmax = [max(row) for row in m]  # max in rows
+rmax = [max(row) for row in m]
