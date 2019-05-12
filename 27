@@ -18,7 +18,3 @@ print(m)
 
 
 rmax = [max(row) for row in m]  # max in rows
-cmax = [max(column) for column in m.T]  # max in columns
-largest = [x for x in rmax if x in cmax]  # intersections
-
-print(largest,"Ezek összege: ",sum(largest))
