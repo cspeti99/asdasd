@@ -18,3 +18,4 @@ print(m)
 
 
 rmax = [max(row) for row in m]
+cmax = [max(column) for column in m.T]
