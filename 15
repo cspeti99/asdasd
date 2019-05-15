@@ -14,7 +14,7 @@ m.append(c)
 m.append(d)
 m.append(e)
 
-m = np.random.randint(0,10,5)
+#m = np.random.randint(0,10,5)
 m = list(m)
 print(m)
 
