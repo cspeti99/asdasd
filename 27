@@ -4,19 +4,6 @@ m = np.random.randint(0,100,(5,5))
 print(m)
 
 
-# maxok = []
-
-# for x in range(0,5):
-#     for y in range(0,5):
-#         r = m[x,:]
-#         maxok.append(r[y])
-#         c = m[:,y]
-# print(maxok)
-
-# maxrows = list(map(max, m))
-# print(maxrows)
-
-
 rmax = [max(row) for row in m]
 cmax = [max(column) for column in m.T]
 largest = [x for x in rmax if x in cmax]
