@@ -15,7 +15,7 @@ m.append(d)
 m.append(e)
 
 # m = np.random.randint(0,10,5)
-m = list(m)
+# m = list(m)
 print(m)
 
 x = set(itertools.permutations(m))
